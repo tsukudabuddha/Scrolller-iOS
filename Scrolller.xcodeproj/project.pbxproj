@@ -20,9 +20,11 @@
 		49B5D0F21FF99ED10000D963 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5D0E81FF99ED00000D963 /* Data.swift */; };
 		49B5D0F41FF99ED10000D963 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5D0EA1FF99ED10000D963 /* Images.swift */; };
 		49B5D0F61FF9A1310000D963 /* ChildData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5D0F51FF9A1310000D963 /* ChildData.swift */; };
+		698226542D3321F48E4B7219 /* Pods_Scrolller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB3DCE7CE10DD08E77FB2FB /* Pods_Scrolller.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CB3DCE7CE10DD08E77FB2FB /* Pods_Scrolller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scrolller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B5D0C81FF993210000D963 /* Scrolller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrolller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B5D0CB1FF993220000D963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49B5D0D01FF993220000D963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		49B5D0E81FF99ED00000D963 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		49B5D0EA1FF99ED10000D963 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		49B5D0F51FF9A1310000D963 /* ChildData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildData.swift; sourceTree = "<group>"; };
+		94D3A1B86B25DAEB5CF80E42 /* Pods-Scrolller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrolller.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scrolller/Pods-Scrolller.debug.xcconfig"; sourceTree = "<group>"; };
+		C452574DA2B7CC45054D52E0 /* Pods-Scrolller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scrolller.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scrolller/Pods-Scrolller.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698226542D3321F48E4B7219 /* Pods_Scrolller.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		367F4EEE457E001A7755B8B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CB3DCE7CE10DD08E77FB2FB /* Pods_Scrolller.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		49B5D0BF1FF993210000D963 = {
 			isa = PBXGroup;
 			children = (
 				49B5D0CA1FF993210000D963 /* Scrolller */,
 				49B5D0C91FF993210000D963 /* Products */,
+				D5DEC64302211D3AE699AD1A /* Pods */,
+				367F4EEE457E001A7755B8B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +103,15 @@
 			path = Scrolller;
 			sourceTree = "<group>";
 		};
+		D5DEC64302211D3AE699AD1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94D3A1B86B25DAEB5CF80E42 /* Pods-Scrolller.debug.xcconfig */,
+				C452574DA2B7CC45054D52E0 /* Pods-Scrolller.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49B5D0DA1FF993220000D963 /* Build configuration list for PBXNativeTarget "Scrolller" */;
 			buildPhases = (
+				32DD94FCBB290AD288814987 /* [CP] Check Pods Manifest.lock */,
 				49B5D0C41FF993210000D963 /* Sources */,
 				49B5D0C51FF993210000D963 /* Frameworks */,
 				49B5D0C61FF993210000D963 /* Resources */,
+				5F60ACAD46497233BCD62090 /* [CP] Embed Pods Frameworks */,
+				7717627C04FEADD5BAD70B81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -154,6 +181,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32DD94FCBB290AD288814987 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scrolller-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F60ACAD46497233BCD62090 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Scrolller/Pods-Scrolller-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scrolller/Pods-Scrolller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7717627C04FEADD5BAD70B81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scrolller/Pods-Scrolller-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49B5D0C41FF993210000D963 /* Sources */ = {
@@ -304,6 +385,7 @@
 		};
 		49B5D0DB1FF993220000D963 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D3A1B86B25DAEB5CF80E42 /* Pods-Scrolller.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,6 +401,7 @@
 		};
 		49B5D0DC1FF993220000D963 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C452574DA2B7CC45054D52E0 /* Pods-Scrolller.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
